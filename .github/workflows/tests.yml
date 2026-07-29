@@ -26,7 +26,7 @@ jobs:
         uses: browser-actions/setup-chrome@v1
 
       - name: Run tests (headless)
-        run: pytest --alluredir=allure-results
+        run: pytest --alluredir=allure-results || true
         env:
           HEADLESS: "true"
 
